@@ -1,0 +1,6 @@
+Tanti autori, tanti post.
+
+Home page con elenco post.
+
+Ricerca per categoria, e home page con gli ultimi 10 post postati in ordine di data.
+
