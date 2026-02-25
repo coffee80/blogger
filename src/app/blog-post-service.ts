@@ -20,7 +20,8 @@ export class BlogPostService {
     }
 
     getPostsBetween(d1:Date, d2:Date):Observable<BlogPost[]>{
-        return this.http.get<BlogPost[]>(this.apiurl);
+        let url = this.apiurl+"/betweendates/"+d1.toISOString()+"/"+d2.toISOString();
+        return this.http.get<BlogPost[]>(url);
     }
 
 }
