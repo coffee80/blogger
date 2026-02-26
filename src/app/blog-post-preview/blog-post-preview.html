@@ -1,17 +1,1 @@
-<!-- il blog post occupa il 100% del suo contenitore, circa, usiamo un w3-light-grey -->
-<div class="blogPost">
-    <h2 class="w3-light-grey"> {{blogPost().title}}</h2>
-    <h3> post by <b>{{blogPost().blogger.nickname}}</b> on <b>{{blogPost().date}}</b> </h3>
-    <div class="preview">
-        {{preview()}}
-    </div>
-    <!-- chiamata ad api. devo chiamare il backend, e devo cambiare lo stato di questo post da published = true a published = false-->
-    @if(blogPost().published){
-        <input class="w3-btn w3-light-grey" value="hide" (click)="hidePost()">
-    }
-    @if(!blogPost().published){
-        <input class="w3-btn w3-light-grey" value="publish" (click)="publishPost()">
-    }
-
-
-</div>
+<p>blog-post-preview works!</p>

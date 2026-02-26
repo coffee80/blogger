@@ -1,0 +1,9 @@
+<!-- bloggers verrà caricato dal service BloggerService che lo caricherà dalle api -->
+@for(blogger of bloggers(); track blogger.id){
+    <app-blogger-preview [blogger]="blogger"></app-blogger-preview>
+}
+
+<!--
+    for(Blogger blogger: bloggers)
+        render(blogger);
+-->

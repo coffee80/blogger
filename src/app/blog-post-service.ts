@@ -24,4 +24,7 @@ export class BlogPostService {
         return this.http.get<BlogPost[]>(url);
     }
 
+    // mi mancano delle chiamate alle api...
+    // mi manca una chiamata per caricare i post degli ultimi 30 giorni
+
 }

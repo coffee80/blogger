@@ -1,0 +1,4 @@
+<!-- posts verrà caricato dal service che lo caricherà dalle api -->
+@for(post of posts(); track post.id){
+    <app-blog-post-preview [post]="post"></app-blog-post-preview>
+}
